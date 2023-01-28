@@ -11,10 +11,13 @@
   <body>
     <div class="root">
       <header class="header">
-        <div class="container-logo">
-          <img class="container-logo__logo" src="images/logo.svg" alt="logo" />
+        <img class="container-logo__logo" src="images/logo.svg" alt="logo" />
+
+        <div class="container-basket">
+          <a class="container-basket__button" href="#"
+            >КОРЗИНА <img src="images/ico.svg" alt="icon"
+          /></a>
         </div>
-        <div class="container-basket"></div>
       </header>
       <main>
         <section class="section">
@@ -29,25 +32,27 @@
               </p>
             </div>
             <div class="container-text__link">
-              <a
-                class="container-text__button"
-                src="cards.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <a class="container-text__button" href="#"
                 >КУПИТЬ <img src="images/iconbutt.svg" alt="icon"
               /></a>
             </div>
           </div>
-          <div class="container-nav">
-            <nav>
-              <ul>
-                <li><a href="">Возможности</a></li>
-                <li><a href="">Где купить</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Помощь</a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="container-nav">
+            <ul class="container-nav__list">
+              <li>
+                <a
+                  class="container-nav__link"
+                  href="cards.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Возможности</a
+                >
+              </li>
+              <li><a class="container-nav__link" href="">Где купить</a></li>
+              <li><a class="container-nav__link" href="">Доставка</a></li>
+              <li><a class="container-nav__link" href="">Помощь</a></li>
+            </ul>
+          </nav>
           <div class="container-img">
             <img class="container-img__man" src="images/guy.svg" alt="man" />
           </div>

@@ -10,25 +10,40 @@ h1 {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.75em;
+  font-size: calc(40px + 20 * (100vw / 1440));
   margin: 0;
 }
-img {
-  max-width: 100%;
-  min-height: 100%;
-}
+
 .root {
 }
 .header {
   max-width: 93%;
   margin: 0 auto;
   margin-top: 5%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .container-logo {
 }
 .container-logo__logo {
 }
 .container-basket {
+}
+.container-basket__button {
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 20px;
+  background: #5222d0;
+  color: white;
+  width: 115px;
+  height: 60px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
 }
 .section {
   display: grid;
@@ -38,9 +53,9 @@ img {
 }
 .container-text {
   grid-area: container-text;
-  display: flex;
-  flex-direction: column;
-  margin: 10% 0 0 10%;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  margin: 10% 1% 0 15%;
 }
 .container-text__title {
 }
@@ -52,12 +67,13 @@ img {
   font-weight: 300;
   font-size: 1.25em;
   line-height: 160%;
+  margin-top: 8%;
 }
 .container-text__link {
-  margin-top: 8%;
   max-height: 10%;
 }
 .container-text__button {
+  text-decoration: none;
   border: none;
   border-radius: 100px;
   padding: 14px 24px;
@@ -73,14 +89,37 @@ img {
 }
 .container-nav {
   grid-area: container-nav;
+  margin-left: 10%;
+}
+.container-nav__list {
+  display: flex;
+  margin-top: 18%;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+}
+.container-nav__link {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #5222d0;
+  text-decoration: none;
 }
 .container-img {
   grid-area: container-img;
   background-image: url(../images/background.svg);
-  width: 60vw;
-  max-height: 80vh;
+  width: 59vw;
+  height: 80vh;
 }
 .container-img__man {
-  width: 40vw;
-  max-height: 77vh;
+  height: 95%;
+  margin-left: 2%;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-weight: 300;
+    font-size: calc(40px + (20 + 20 * 0.7) * ((100vw - 320px) / 1440));
+  }
 }
