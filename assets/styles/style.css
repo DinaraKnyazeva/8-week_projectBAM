@@ -6,15 +6,16 @@
   font-family: "Roboto Slab";
   src: url(../fonts/RobotoSlab.ttf);
 }
+img {
+  width: 100%;
+  height: 100%;
+}
 h1 {
   font-family: "Intro";
   font-style: normal;
   font-weight: 400;
   font-size: calc(40px + 20 * (100vw / 1440));
   margin: 0;
-}
-
-.root {
 }
 .header {
   max-width: 93%;
@@ -25,27 +26,12 @@ h1 {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.container-logo {
-}
-.container-logo__logo {
-}
 .container-basket {
-}
-.container-basket__button {
-  text-decoration: none;
-  border: none;
-  border-radius: 100px;
-  padding: 12px 20px;
-  background: #5222d0;
-  color: white;
-  width: 115px;
-  height: 60px;
-  font-family: "Intro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
+  width: 100px;
+  height: 50px;
 }
 .section {
+  margin-top: 1%;
   display: grid;
   grid-template-areas:
     "container-text container-img"
@@ -56,12 +42,10 @@ h1 {
   display: grid;
   grid-template-rows: 40% 40% 20%;
   margin: 10% 1% 0 15%;
+  justify-items: start;
 }
-.container-text__title {
-}
-.container-text__subtitle {
-}
-.container-text__text {
+.container-text__text,
+.opportunities__text {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
@@ -70,8 +54,9 @@ h1 {
   margin-top: 8%;
 }
 .container-text__link {
-  max-height: 10%;
+  max-height: 60%;
 }
+
 .container-text__button {
   text-decoration: none;
   border: none;
@@ -115,6 +100,7 @@ li {
 }
 .container-img__man {
   height: 95%;
+  width: 80%;
   margin-left: 2%;
 }
 @media screen and (max-width: 767px) {
@@ -123,3 +109,66 @@ li {
     font-size: calc(40px + (20 + 20 * 0.7) * ((100vw - 320px) / 1440));
   }
 }
+/* opportunities start */
+.opportunities {
+  display: flex;
+  flex-direction: column;
+  max-width: 88%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.opportunities__title {
+}
+.opportunities__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  margin-top: 2%;
+  align-items: start;
+}
+.opportunities__card {
+  margin: 1%;
+}
+.opportunities__img {
+  padding: 1%;
+}
+.opportunities__subtitle {
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+}
+.opportunities__card_orange {
+  background-color: #ec615b;
+}
+.opportunities__subtitle_white {
+  color: white;
+  margin: 2%;
+}
+.opportunities__input {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 160%;
+  color: #000000;
+  border: none;
+  margin: 2%;
+}
+.container-basket__button_subscribe {
+  margin: 2%;
+  width: 35%;
+  height: 10%;
+}
+.container-nav_left {
+  margin-left: 0;
+  width: 40%;
+}
+.container-nav__left {
+  padding: 0;
+}
+.container-nav__link_black {
+  color: black;
+}
+/* opportunities start */
