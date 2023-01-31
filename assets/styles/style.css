@@ -26,25 +26,25 @@ h1 {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-.container-basket {
+.header__basket {
   width: 100px;
   height: 50px;
 }
-.section {
+.content {
   margin-top: 1%;
   display: grid;
   grid-template-areas:
-    "container-text container-img"
-    "container-nav container-img";
+    "content__block-text content__img"
+    "content__nav content__img";
 }
-.container-text {
-  grid-area: container-text;
+.content__block-text {
+  grid-area: content__block-text;
   display: grid;
   grid-template-rows: 40% 40% 20%;
   margin: 10% 1% 0 15%;
   justify-items: start;
 }
-.container-text__text,
+.content__text,
 .opportunities__text {
   font-family: "Roboto Slab";
   font-style: normal;
@@ -53,30 +53,14 @@ h1 {
   line-height: 160%;
   margin-top: 8%;
 }
-.container-text__link {
+.content__link {
   max-height: 60%;
 }
-
-.container-text__button {
-  text-decoration: none;
-  border: none;
-  border-radius: 100px;
-  padding: 14px 24px;
-  background: #5222d0;
-  color: white;
-  width: 50%;
-  height: 5%;
-  font-family: "Intro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.5em;
-  line-height: 35px;
-}
-.container-nav {
-  grid-area: container-nav;
+.content__nav {
+  grid-area: content__nav;
   margin-left: 10%;
 }
-.container-nav__list {
+.content__list {
   display: flex;
   margin-top: 18%;
   justify-content: space-between;
@@ -84,7 +68,7 @@ h1 {
 li {
   list-style-type: none;
 }
-.container-nav__link {
+.content__link {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
@@ -92,13 +76,13 @@ li {
   color: #5222d0;
   text-decoration: none;
 }
-.container-img {
-  grid-area: container-img;
+.content__img {
+  grid-area: content__img;
   background-image: url(../images/background.svg);
   width: 59vw;
   height: 80vh;
 }
-.container-img__man {
+.content__man {
   height: 95%;
   width: 80%;
   margin-left: 2%;
@@ -116,8 +100,6 @@ li {
   max-width: 88%;
   margin: 0 auto;
   margin-top: 5%;
-}
-.opportunities__title {
 }
 .opportunities__box {
   display: grid;
@@ -156,19 +138,28 @@ li {
   border: none;
   margin: 2%;
 }
-.container-basket__button_subscribe {
+.opportunities__button {
   margin: 2%;
-  width: 35%;
-  height: 10%;
+  width: 40%;
+  height: 8%;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 24px;
+  background: #5222d0;
+  color: white;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 35px;
 }
-.container-nav_left {
+.content__nav_left {
   margin-left: 0;
   width: 40%;
-}
-.container-nav__left {
   padding: 0;
 }
-.container-nav__link_black {
+.content__link_black {
   color: black;
 }
 /* opportunities start */
